@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Finder</title>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Meal Finder</h1>
+    <div class="container">
+       <h1>Meal Finder</h1>
+       <div class="flex">
+           <form class="flex" id="submit">
+               <input type="text" id="search" placeholder="Search for meals or keywords">
+               <button class="search-btn" type="submit">
+                   <i class="fas fa-search"></i>
+               </button>
+           </form>
+           <button class="random-btn" id="random">
+               <i class="fas fa-random"></i>
+           </button>
+       </div> 
+       <div id="result-heading"></div>
+       <div id="meals" class="meals"></div>
+       <div id="single-meal"></div>
+    </div>
     
 </body>
 

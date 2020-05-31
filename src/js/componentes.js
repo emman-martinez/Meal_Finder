@@ -1,4 +1,4 @@
-// import './../css/componentes.css';
+import './../css/componentes.css'; 
 
 /* ************************************************************ */
 const eventos = () => {
