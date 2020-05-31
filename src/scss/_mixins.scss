@@ -1,0 +1,50 @@
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin exRateCalculator {
+    @media (max-width: #{600px}) {
+        @content;
+    }
+}
+
+@mixin boton() {
+    cursor: pointer;
+    background-color: #3498DB;
+    border: 2px solid #3498DB;
+    border-radius: 4px;
+    color: $claro;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 1s;
+    &:hover {
+        background-color: $claro;
+        border: 2px solid #3498DB;
+        color: #3498DB;
+    }
+}
+
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+@mixin gradiente($color1, $color2) {
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+}
